@@ -17,7 +17,7 @@
     "@nuxtjs/i18n": "^7.3.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.25.3",
-    "nuxt": "2.16.0",
+    "nuxt": "^2.16.1",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
@@ -27,7 +27,7 @@
     "@nuxt/kit": "3.0.0-rc.13",
     "@nuxtjs/eslint-config": "^11.0.0",
     "@nuxtjs/eslint-module": "^3.1.0",
-    "@nuxtjs/tailwindcss": "^5.0.0-4",
+    "@nuxtjs/tailwindcss": "^6.4.0",
     "autoprefixer": "^10.4.13",
     "css-loader": "5.0.0",
     "eslint": "^8.24.0",

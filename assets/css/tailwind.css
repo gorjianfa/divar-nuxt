@@ -84,8 +84,8 @@
       format('woff'),
     /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/IRANSansWeb.ttf')
       format('truetype');
-},
-.header-text{
-  @apply tw-text-2xl tw-font-medium tw-text-gray-900
-},
-.text-base-dark
+}
+
+.header-text {
+  @apply tw-text-2xl tw-font-medium tw-text-gray-900;
+}

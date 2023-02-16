@@ -12,14 +12,19 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/tailwind.css', '@/assets/css/input.css'],
+  css: ['@/assets/css/tailwind.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/i18n', '~/plugins/directives'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
+  components: [
+    '~/components/atoms',
+    '~/components/molecules',
+    '~/components/organisms',
+    '~/components/templates',
+    '~/components/global',
+  ],
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
@@ -58,7 +63,6 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/i18n',
     '@nuxtjs/pwa',
-    '@nuxtjs/tailwindcss',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -74,7 +78,7 @@ export default {
     },
   },
   tailwindcss: {
-    cssPath: '~/assets/style/tailwind.css',
+    cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
     exposeConfig: false,
     config: {},
@@ -82,7 +86,7 @@ export default {
     viewer: true,
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
- /* build: {
+  /* build: {
     postcss: {
       postcssOptions: {
         plugins: {
@@ -99,10 +103,9 @@ export default {
       postcssOptions: {
         plugins: {
           autoprefixer: {},
-          'postcss-import': {}
-        }
-      }
-    }
-  }
- 
+          'postcss-import': {},
+        },
+      },
+    },
+  },
 }
