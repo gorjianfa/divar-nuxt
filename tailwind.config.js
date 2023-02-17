@@ -2,12 +2,13 @@
 const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
-    'components/**/*.vue',
-    'layouts/**/*.vue',
-    'pages/**/*.vue',
-    'plugins/**/*.js',
-    'nuxt.config.js',
+    '~/components/**/*.vue',
+    '~/layouts/**/*.vue',
+    '~/pages/**/*.vue',
+    '~/plugins/**/*.js',
+    '~/nuxt.config.js',
   ],
+  prefix: 'tw-',
   theme: {
     screens: {
       xs: '360px',
@@ -41,7 +42,10 @@ module.exports = {
       },
     },
   },
-  prefix: 'tw-',
+  corePlugins: {
+    container: false,
+    preflight: false,
+  },
   plugins: [
     plugin(function ({ addComponents, addVariant }) {
       addComponents({

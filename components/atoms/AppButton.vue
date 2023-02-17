@@ -1,6 +1,8 @@
 <template>
   <div>
-    <button class=" tw-justify-center tw-min-w-[6rem] tw-overflow-hidden tw-relative  tw-px-4 tw-cursor-pointer tw-inline-flex tw-items-center tw-bg-white hover:tw-bg-slate-50 tw-h-10 tw-rounded ">
+    <button
+      class="tw-justify-center tw-min-w-[6rem] tw-overflow-hidden tw-relative tw-px-4 tw-cursor-pointer tw-inline-flex tw-items-center tw-bg-white hover:tw-bg-slate-50 tw-h-10 tw-rounded"
+    >
       <slot name="befor"> </slot>
       <span
         class="tw-font-medium tw-text-base tw-text-gray-700 hover:tw-text-gray-900 tw-whitespace-nowrap"

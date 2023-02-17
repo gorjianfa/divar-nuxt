@@ -12,8 +12,8 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/tailwind.css'],
-
+  css: ['@/assets/css/main.scss', '@/assets/css/tailwind.css'],
+  devServerHandlers: [],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/i18n', '~/plugins/directives'],
 
@@ -85,19 +85,8 @@ export default {
     injectPosition: 0,
     viewer: true,
   },
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  /* build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
 
-          autoprefixer: {},
-          'postcss-import': {},
-        },
-      },
-    },
-  },*/
+  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
       postcssOptions: {
@@ -106,6 +95,13 @@ export default {
           'postcss-import': {},
         },
       },
+    },
+    extend(config, { isDev, isClient }) {
+      config.node = {
+        fs: 'empty',
+      }
+
+      // ....
     },
   },
 }
