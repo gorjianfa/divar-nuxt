@@ -1,11 +1,10 @@
 <template>
- <div class="">
-
- </div>
+  <div>daas</div>
 </template>
-
 <script>
-export default {
-  name: 'IndexPage',
-}
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'SdsdsFs',
+})
 </script>
