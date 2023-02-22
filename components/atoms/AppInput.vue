@@ -13,7 +13,7 @@
         </div>
       </div>
       <div
-        class="tw-pl-2 tw-flex tw-justify-between tw-items-center tw-w-full tw-max-w-[484px] tw-h-10 tw-ring-1 tw-ring-gray-300 hover:tw-ring-gray-500 tw-rounded-lg focus:tw-ring-red-800 focus-within:tw-ring-red-800"
+        class="tw-pl-2 tw-flex tw-justify-between tw-items-center tw-w-full tw-max-w-[484px] tw-h-10 tw-ring-2 tw-ring-gray-300 hover:tw-ring-gray-500 tw-rounded-md focus:tw-ring-red-800 focus-within:tw-ring-red-800 focus:tw-ring-opacity-50   focus-within:tw-ring-opacity-50"
       >
         <input
           :placeholder="placeholder"

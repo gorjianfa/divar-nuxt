@@ -11,3 +11,29 @@
 .header-text {
   @apply tw-text-2xl tw-font-medium tw-text-gray-900;
 }
+.support-text-sm-hover {
+  @apply tw-text-sm tw-font-normal tw-text-gray-400 hover:tw-text-gray-600;
+}
+.support-text-xl {
+  @apply tw-font-medium tw-text-xl tw-text-gray-800;
+}
+
+.base-text-sm-hover {
+  @apply tw-text-sm tw-font-normal tw-text-gray-400 hover:tw-text-gray-600;
+}
+/*صفحه همه اگهی ها  و لیست*/
+.base-text-xs-hover {
+  @apply tw-text-xs tw-font-normal tw-text-gray-400 hover:tw-text-gray-600;
+}
+
+.base-text-sm {
+  @apply tw-text-sm tw-font-normal tw-text-gray-400 ;
+}
+
+.base-text-xs {
+  @apply tw-text-xs tw-font-normal tw-text-gray-400;
+}
+.grouping-red-hover{
+@apply tw-text-xs tw-font-normal hover:tw-text-red-700
+}
+
