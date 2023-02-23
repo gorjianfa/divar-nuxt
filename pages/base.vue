@@ -1,6 +1,14 @@
 <template>
   <div>
-    <div class="tw-my-8 tw-flex tw-flex-col tw-gap-6 tw-justify-center">
+    <CardLastVisit
+      title="اپارتمان واقع در شریعتی"
+      uploadDate="دو روز پیش در بابلسر "
+      img="flower.jpg"
+    />
+
+    <div
+      class="tw-my-8 tw-flex tw-flex-col tw-gap-6 tw-justify-center sm:tw-hidden"
+    >
       <AppButton title="چت" type="transparent" />
 
       <AppInput
