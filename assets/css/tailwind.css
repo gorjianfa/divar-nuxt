@@ -27,11 +27,11 @@
 }
 
 .base-text-sm {
-  @apply tw-text-sm tw-font-normal tw-text-gray-400 ;
+  @apply tw-text-sm tw-font-normal tw-text-gray-500 ;
 }
 
 .base-text-xs {
-  @apply tw-text-xs tw-font-normal tw-text-gray-400;
+  @apply tw-text-xs tw-font-normal tw-text-gray-500;
 }
 .grouping-red-hover{
 @apply tw-text-xs tw-font-normal hover:tw-text-red-700

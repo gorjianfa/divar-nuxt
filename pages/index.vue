@@ -1,10 +1,16 @@
 <template>
   <div class="tw-flex tw-flex-col tw-gap-2 tw-m-10">
-    <CardBaseCard />
+    <CardBaseCard
+      title="zamin keshavarzi"
+      price="50000000"
+      timeOraddres="2day a go"
+      amountOfuse="new"
+    img="farm.jpg"
+    />
 
     <div class="tw-p-10">
       <img
-        src="img/building.jpg"
+        src="img/main-page/building.jpg"
         alt=""
         class="tw-flex tw-w-full tw-h-full tw-max-w-[136px] tw-max-h-[136px] tw-rounded-md"
       />
