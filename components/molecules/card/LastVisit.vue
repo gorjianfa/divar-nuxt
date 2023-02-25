@@ -2,7 +2,7 @@
   <div>
     <div class="tw-px-2">
       <div
-        class="tw-w-full tw-h-full tw-max-w-[368px] tw-max-h-[132px] tw-rounded tw-border-[1px] tw-border-solid tw-border-gray-200 tw-bg-white"
+        class="tw-w-full tw-h-full tw-max-w-[368px] tw-max-h-[170px]    sm:tw-max-h-[132px] tw-rounded tw-border-[1px] tw-border-solid tw-border-gray-200 tw-bg-white"
       >
         <a href="" class="tw-p-4 tw-flex tw-cursor-pointer tw-no-underline">
           <div class="tw-w-full tw-max-w-[96px] tw-max-h-[83.98px]">
@@ -19,7 +19,7 @@
               <span class="tw-font-medium tw-text-sm tw-text-black">{{
                 title
               }}</span>
-              <span class="base-text-xs tw-mt-1"> {{ uploadDate }}</span>
+              <span class="base-text-xs tw-mt-1 tw-whitespace-nowrap"> {{ uploadDate }}</span>
             </div>
             <!--share and remove svg-->
             <div class="tw-flex tw-mt-2 tw-gap-1 tw-justify-end">
