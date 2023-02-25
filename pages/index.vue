@@ -8,13 +8,7 @@
     img="farm.jpg"
     />
 
-    <div class="tw-p-10">
-      <img
-        src="img/main-page/building.jpg"
-        alt=""
-        class="tw-flex tw-w-full tw-h-full tw-max-w-[136px] tw-max-h-[136px] tw-rounded-md"
-      />
-    </div>
+   <ListCategoryList/>
 
     <div class="md:tw-hidden tw-flex tw-flex-col tw-gap-2">
       <div class="tw-text-base tw-text-blue-500">lololo</div>
