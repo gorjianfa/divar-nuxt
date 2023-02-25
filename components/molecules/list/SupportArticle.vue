@@ -16,8 +16,12 @@
             {{ title }}
           </div>
           <div class="tw-flex tw-flex-col tw-gap-1">
-            <li class="tw-cursor-pointer base-text-sm-hover tw-list-none">
-              {{ question }} ?
+            <li
+              class="tw-cursor-pointer base-text-xs-hover tw-list-none"
+              v-for="(item, i) in features"
+              :key="i"
+            >
+              {{ item.question }} ?
             </li>
           </div>
           <a
@@ -38,11 +42,12 @@ export default {
       type: String,
       default: 'chat.png',
     },
-    question: {
+
+    title: {
       type: String,
       default: '',
     },
-    title: {
+    features: {
       type: String,
       default: '',
     },
