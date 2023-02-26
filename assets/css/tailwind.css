@@ -23,7 +23,7 @@
 }
 /*صفحه همه اگهی ها  و لیست*/
 .base-text-xs-hover {
-  @apply tw-text-xs tw-font-normal tw-text-gray-400 hover:tw-text-gray-600;
+  @apply tw-text-xs tw-font-normal tw-text-gray-500 hover:tw-text-gray-600;
 }
 
 .base-text-sm {

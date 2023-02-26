@@ -6,6 +6,21 @@
       img="flower.jpg"
     />
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="tw-my-10">
       <ListSupportArticle
         question=" چگونه در دیوار آگهی ثبت کنم "
@@ -55,6 +70,11 @@
     <hr />
     <ListUserWebsite class="tw-flex tw-justify-center" />
     <ListInternalList class="tw-flex tw-justify-center tw-my-5"/>
+
+
+
+<div class="tw-my-10"><ListBaseCategoryBranches/></div>
+
   </div>
 </template>
 
