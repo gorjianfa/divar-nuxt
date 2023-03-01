@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="tw-w-full tw-h-full tw-max-w-[248px] tw-flex tw-bg-white">
+    <div class="tw-w-full tw-h-full tw-max-w-[248px]  tw-bg-white">
       <div class="tw-py-5">
-        <div class="tw-flex tw-gap-2 tw-items-center">
+        <div class="tw-flex tw-gap-2 tw-items-center tw-w-full">
           <div class="">
             <!--down svg-->
             <svg

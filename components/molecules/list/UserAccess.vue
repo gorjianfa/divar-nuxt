@@ -4,7 +4,7 @@
       class="tw-w-full tw-h-full tw-max-h-[48px] tw-max-w-[210px] tw-bg-white tw-px-4 group-hover:tw-bg-gray-100"
     >
       <div
-        class="tw-border-0 tw-border-solid tw-border-t tw-border-t-gray-300 tw-cursor-pointer "
+        class="border-top tw-cursor-pointer "
       >
 
       <div class="tw-flex tw-flex-col tw-mt-2 ">

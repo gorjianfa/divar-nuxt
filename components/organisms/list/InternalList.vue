@@ -50,7 +50,7 @@
             <div class=" ">
               <div class="tw-flex tw-flex-col">
                 <div
-                  class="tw-border-b tw-border-0 tw-border-b-gray-300 tw-border-t tw-border-solid tw-border-t-gray-300"
+                  class="border-bottem border-top"
                 >
                   <ListInternalAccess
                     title="دیوار برای کسب‌وکارها"
@@ -58,7 +58,7 @@
                   />
                 </div>
                 <div
-                  class="tw-border-b tw-border-0 tw-border-b-gray-300 tw-border-solid"
+                  class="border-bottem"
                 >
                   <ListInternalAccess title="خروج " img="escape.svg" />
                 </div>

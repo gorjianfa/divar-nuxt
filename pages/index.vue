@@ -8,6 +8,12 @@
     img="farm.jpg"
     />
 
+<ListPictureNote/>
+
+
+
+
+
 <ListSupportQuestion/>
 
 <ListBranchesList/>

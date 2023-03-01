@@ -48,8 +48,8 @@ export default {
       default: '',
     },
     features: {
-      type: String,
-      default: '',
+      type: Array,
+      default: () => [],
     },
   },
 }

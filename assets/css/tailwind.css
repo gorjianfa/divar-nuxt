@@ -8,9 +8,6 @@
   }
 }
 
-.header-text {
-  @apply tw-text-2xl tw-font-medium tw-text-gray-900;
-}
 .support-text-sm-hover {
   @apply tw-text-sm tw-font-normal tw-text-gray-400 hover:tw-text-gray-600;
 }
@@ -27,13 +24,21 @@
 }
 
 .base-text-sm {
-  @apply tw-text-sm tw-font-normal tw-text-gray-500 ;
+  @apply tw-text-sm tw-font-normal tw-text-gray-500;
 }
 
 .base-text-xs {
   @apply tw-text-xs tw-font-normal tw-text-gray-500;
 }
-.grouping-red-hover{
-@apply tw-text-xs tw-font-normal hover:tw-text-red-700
+.grouping-red-hover {
+  @apply tw-text-xs tw-font-normal hover:tw-text-red-700;
 }
-
+.text-information-list {
+  @apply tw-text-base tw-font-normal;
+}
+.border-top{
+@apply tw-border-t tw-border-solid tw-border-0 tw-border-t-gray-300
+}
+.border-bottem{
+@apply tw-border-b tw-border-solid tw-border-b-gray-300 tw-border-0 
+}

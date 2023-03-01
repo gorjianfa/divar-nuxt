@@ -21,9 +21,6 @@
               >
                 {{ item.categories }}
               </li>
-           
-           
-           
             </div>
             <div class="" v-if="branchList">
               <div class="tw-pr-4">
@@ -71,11 +68,34 @@ export default {
       type: String,
       default: '',
     },
-    
     features: {
-      type: String,
-      default: '',
+      type: Array,
+      default: () => [],
     },
+  },
+  setup() {
+    const list = [
+      {
+        title: '1',
+        parent: 'vehicle',
+      },
+      {
+        title: '2',
+        parent: 'vehicle',
+      },
+      {
+        title: '3',
+        parent: 'lorem',
+      },
+      {
+        title: '4',
+        parent: 'vehicle',
+      },
+    ]
+    const filteredList = () => {
+      return list.filter((item) => item.parent !== 'vehicle')
+    }
+    console.log(filteredList())
   },
 }
 </script>
