@@ -48,6 +48,10 @@
           <div class="border-bottem">
             <div class=""><SimpleSelect value="وضعیت آگهی" /></div>
           </div>
+          <!--footer-->
+          <div class="">
+            <CardFooterItems v-for="(item, i) in items" :key="i" />
+          </div>
         </div>
       </div>
     </div>
@@ -58,6 +62,30 @@
 export default {
   data() {
     return {
+      items: [
+        {
+          features: [
+            { access: 'درباره دیوار' },
+            { access: 'دریافت برنامه' },
+            { access: 'بلاگ دیوار' },
+            { access: 'کسب وکار ها' },
+            { access: 'پشتیبانی و قوانین' },
+          ],
+          svg: [
+            { img: 'twitter.svg' },
+            { img: 'linkedin.svg' },
+            { img: 'instagram.svg' },
+
+            { img: 'film.svg' },
+          ],
+          consent: [
+            { picture: 'mojavez.png' },
+            { picture: 'mojavez2.png' },
+            { picture: 'mojavez3.png' },
+          ],
+        },
+      ],
+
       list2: [
         {
           img: 'house.svg',
@@ -1004,7 +1032,7 @@ export default {
   }, */
 
   computed: {
-    resultQuery() {
+    /*  resultQuery() {
       if (this.searchQuery) {
         return this.list2.filter((item) => {
           return this.searchQuery
@@ -1014,8 +1042,8 @@ export default {
       } else {
         return this.list2
       }
-    },
-    x() {
+    }, */
+    resultQuery() {
       if (this.searchQuery) {
         return this.list2.filter((item) => this.searchQuery === item.parent)
       } else {
