@@ -1008,10 +1008,16 @@ export default {
       if (this.searchQuery) {
         return this.list2.filter((item) => {
           return this.searchQuery
-           
             .split(' ')
             .every((v) => item.parent.includes(v))
         })
+      } else {
+        return this.list2
+      }
+    },
+    x() {
+      if (this.searchQuery) {
+        return this.list2.filter((item) => this.searchQuery === item.parent)
       } else {
         return this.list2
       }
