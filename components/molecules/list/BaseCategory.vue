@@ -2,7 +2,7 @@
   <div>
     <div class="tw-w-full tw-h-full tw-max-w-[248px] tw-max-h-10 tw-flex">
       <div class="tw-py-2 tw-flex tw-items-center tw-gap-2.5">
-        <div class="">
+        <div class="" v-if="img">
           <img
             :src="'img/' + img"
             alt=""
@@ -19,7 +19,7 @@
                 v-for="(item, i) in category"
                 :key="i"
               >
-                {{ item.categories }}
+                {{ item.title }}
               </li>
             </div>
             <div class="" v-if="branchList">
@@ -32,7 +32,7 @@
                     v-for="(item, i) in features"
                     :key="i"
                   >
-                    {{ item.branches }}
+                    {{ item.title }}
                   </li>
                 </div>
               </div>
@@ -46,6 +46,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+ 
+    }
+  },
+
   props: {
     title: {
       type: String,
@@ -73,30 +79,7 @@ export default {
       default: () => [],
     },
   },
-  setup() {
-    const list = [
-      {
-        title: '1',
-        parent: 'vehicle',
-      },
-      {
-        title: '2',
-        parent: 'vehicle',
-      },
-      {
-        title: '3',
-        parent: 'lorem',
-      },
-      {
-        title: '4',
-        parent: 'vehicle',
-      },
-    ]
-    const filteredList = () => {
-      return list.filter((item) => item.parent !== 'vehicle')
-    }
-    console.log(filteredList())
-  },
+   
 }
 </script>
 
