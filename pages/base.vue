@@ -1,17 +1,17 @@
 <template>
   <div>
+    <div class="tw-py-5 tw-bg-red-200">
+      <TopHeaderButtons />
+    </div>
+    <div class="tw-py-5"><CardMainButtons /></div>
+
     <CardLastVisit
       title="اپارتمان واقع در شریعتی"
       uploadDate="دو روز پیش در بابلسر "
       img="flower.jpg"
     />
     <ListPictureNote v-for="(item, i) in list" :key="i" v-bind="item" />
-    <div class="tw-flex tw-items-center tw-gap-2">
-      <div class="">
-        <AppButton title="اطلاعات تماس" variant="fill" />
-      </div>
-      <div class=""><AppButton title="چت" variant="outline" /></div>
-    </div>
+
 
     <div class="tw-my-20"><ListAboveInformation /></div>
     <div class="text-information-list tw-text-gray-500">metrazh :</div>
@@ -58,16 +58,18 @@
 <script>
 export default {
   name: 'BasePage',
-  data(){
-  return{
-    list:[
-      {picture:[
-        {img:'bathroom.jpg'},
-        {img:'bedroom.jpg'},
-        {img:'kitchen.jpg'},
-      ]}
-    ]
-  }
-  }
+  data() {
+    return {
+      list: [
+        {
+          picture: [
+            { img: 'bathroom.jpg' },
+            { img: 'bedroom.jpg' },
+            { img: 'kitchen.jpg' },
+          ],
+        },
+      ],
+    }
+  },
 }
 </script>

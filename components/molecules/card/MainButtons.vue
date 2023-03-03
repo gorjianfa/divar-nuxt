@@ -3,11 +3,17 @@
     <div class="tw-w-full tw-h-full tw-max-w-[404px]">
       <div class="tw-my-4">
         <div class="tw-flex tw-items-center tw-justify-between">
-          <div class="tw-flex tw-items-center  tw-gap-2">
+          <div class="tw-flex tw-items-center tw-gap-2">
             <div class="">
-              <AppButton title="اطلاعات تماس" variant="fill" />
+              <AppButton
+                title="اطلاعات تماس"
+                variant="fill"
+                textSize="baseWhite"
+              />
             </div>
-            <div class=""><AppButton title="چت" variant="outline" /></div>
+            <div class="">
+              <AppButton title="چت" variant="outline" textSize="baseGray" />
+            </div>
           </div>
           <div class="tw-flex tw-items-center">
             <div class="tw-group">

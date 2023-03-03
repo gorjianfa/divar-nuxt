@@ -5,7 +5,7 @@
     </div>
 
     <div
-      class="tw-w-full tw-h-full tw-max-w-[248px] tw-max-h-10 tw-flex tw-bg-emerald-400"
+      class="tw-w-full tw-h-full tw-max-w-[248px] tw-max-h-10 tw-flex tw-bg-emerald-400 strec"
     >
       <div class="tw-flex tw-flex-col tw-gap-3 tw-w-full">
         <div

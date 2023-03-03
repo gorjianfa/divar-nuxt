@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="tw-container">
+    <div class="tw-container tw-bg-white">
       <div class="tw-flex tw-items-center tw-justify-between tw-py-4">
         <div class="tw-flex tw-items-center tw-gap-2">
           <div class="">
