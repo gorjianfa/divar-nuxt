@@ -1,10 +1,13 @@
 <template>
   <div>
-    <div class="tw-w-full tw-h-10 tw-p-5">
-      <div class="">
-        <div class="tw-flex tw-gap-4">
-          <AppButton v-for="(item, i) in lists" :key="i" v-bind="item" />
-        </div>
+    <div class="">
+      <div class="tw-flex tw-gap-2 tw-items-center tw-m-3">
+        <AppButton
+          v-for="(item, i) in lists"
+          :key="i"
+          v-bind="item"
+          class="tw-w-full tw-max-w-[100px]"
+        />
       </div>
     </div>
   </div>
@@ -28,14 +31,16 @@ export default {
         },
         {
           title: 'چت',
-          apendIcon: 'chat.svg',
+          prependIcon: 'chat.svg',
           variant: 'hover',
           textSize: 'xSmall',
+          href: '/dfghjk',
         },
         {
           title: 'ثبت اگهی',
           textSize: 'small',
           variant: 'default',
+          to: '/test',
         },
       ],
     }

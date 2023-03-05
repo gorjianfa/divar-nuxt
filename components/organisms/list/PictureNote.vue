@@ -66,7 +66,7 @@
               name="text"
               id=""
               placeholder="یادداشت شما .."
-              class="hover:tw-border-gray-500 tw-cursor-text focus-within:tw-outline-red-600/50 focus:tw-outline-red-600/50 tw-border-gray-300 tw-font-normal tw-text-base tw-text-gray-800 tw-max-w-[480px] tw-px-4 tw-py-2 tw-block tw-h-[120px] tw-w-full"
+              class="kt-textarea__field tw-resize-none hover:tw-border-gray-500 tw-cursor-text focus-within:tw-outline-red-600/50 focus:tw-outline-red-600/50 tw-border-gray-300 tw-font-normal tw-text-base tw-text-gray-800 tw-max-w-[480px] tw-px-4 tw-py-2 tw-block tw-h-[120px] tw-w-full"
             >
             </textarea>
             <div

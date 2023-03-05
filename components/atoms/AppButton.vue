@@ -1,9 +1,11 @@
 <template>
   <div class="tw-group">
     <button
-      class="tw-overflow-hidden tw-cursor-pointer tw-px-4 tw-py-2.5 tw-rounded group-hover:tw-transition-all group-hover:tw-delay-100"
+      class="tw-cursor-pointer tw-w-full tw-px-4 tw-py-2.5 tw-rounded group-hover:tw-transition-all group-hover:tw-delay-100"
       :class="variantClass"
     >
+      <!-- eslint-disable-next-line vue/require-component-is -->
+      <Component  class="" v-bind="linkAdress"></Component>
       <div class="tw-flex tw-items-center tw-justify-center tw-gap-1.5">
         <!--قبل-->
         <div class="" v-if="prependIcon">
@@ -26,8 +28,6 @@
         </div>
       </div>
     </button>
-
-    
   </div>
 </template>
 
@@ -87,9 +87,8 @@ export default defineComponent({
     const textClass = computed(() => {
       return {
         xSmall:
-          'tw-font-medium tw-text-xs tw-text-gray-500 group-hover:tw-text-gray-700',
-        small:
-          'tw-font-medium tw-text-sm tw-text-white ',
+          'tw-font-medium tw-text-sm tw-text-gray-400 group-hover:tw-text-gray-700',
+        small: 'tw-font-medium tw-text-sm tw-text-white ',
         baseGray:
           'tw-font-medium tw-text-base tw-text-gray-500 group-hover:tw-text-gray-900',
         baseWhite: 'tw-font-medium tw-text-base tw-text-white ',
@@ -99,18 +98,39 @@ export default defineComponent({
     const variantClass = computed(() => {
       return {
         default:
-          'tw-border-hidden tw-min-w-[100px] tw-w-full tw-bg-red-600  group-hover:tw-bg-opacity-75',
-        fill: 'tw-border-hidden tw-min-w-[126px] tw-w-full tw-bg-red-700  group-hover:tw-bg-opacity-75',
+          'tw-border-hidden tw-max-w-[100px]  tw-bg-red-600  group-hover:tw-bg-opacity-90',
+        fill: 'tw-border-hidden tw-max-w-[126px]  tw-bg-red-700  group-hover:tw-bg-opacity-90',
         hover:
-          'tw-border-hidden tw-min-w-[100px] tw-w-full tw-bg-white group-hover:tw-bg-gray-100 ',
+          'tw-border-hidden tw-max-w-[100px] tw-bg-white group-hover:tw-bg-gray-100 ',
         outline:
-          'tw-min-w-[125px] tw-w-full tw-border tw-border-gray-300 tw-border-solid tw-bg-white group-hover:tw-bg-gray-100 ',
+          'tw-max-w-[126px]  tw-border tw-border-gray-300 tw-border-solid tw-bg-white group-hover:tw-bg-gray-100 ',
       }[props.variant]
+    })
+
+    const linkAdress = computed(() => {
+      const { href, to } = props
+
+      if (to?.length) {
+        return {
+          is: 'nuxt-link',
+          to,
+        }
+      } else if (href?.length) {
+        return {
+          is: 'a',
+          href,
+        }
+      } else {
+        return {
+          is: 'button',
+        }
+      }
     })
 
     return {
       variantClass,
       textClass,
+      linkAdress,
     }
   },
 })

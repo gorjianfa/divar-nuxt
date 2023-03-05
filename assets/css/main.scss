@@ -76,3 +76,16 @@
     /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/IRANSansWeb.ttf')
       format('truetype');
 }
+.kt-textarea__field::-webkit-resizer {
+  display: none;
+}
+.kt-textarea__field::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+.kt-textarea__field::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: rgba(0,0,0,.12);
+  border: 4px solid rgba(255,255,255,0);
+  border-radius: 12px;
+}

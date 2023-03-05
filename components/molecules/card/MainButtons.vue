@@ -3,16 +3,24 @@
     <div class="tw-w-full tw-h-full tw-max-w-[404px]">
       <div class="tw-my-4">
         <div class="tw-flex tw-items-center tw-justify-between">
-          <div class="tw-flex tw-items-center tw-gap-2">
-            <div class="">
+          <div class="tw-flex tw-items-center tw-gap-2 tw-w-full">
+            <div class="tw-w-full tw-max-w-[126px]">
               <AppButton
+              href="https://www.cyvision.com"
+                class="tw-w-full"
                 title="اطلاعات تماس"
                 variant="fill"
                 textSize="baseWhite"
               />
             </div>
-            <div class="">
-              <AppButton title="چت" variant="outline" textSize="baseGray" />
+            <div class="tw-w-full tw-max-w-[126px]">
+              <AppButton
+               href="https://www.cyvision.com"
+                title="چت"
+                variant="outline"
+                textSize="baseGray"
+                class="tw-w-full"
+              />
             </div>
           </div>
           <div class="tw-flex tw-items-center">

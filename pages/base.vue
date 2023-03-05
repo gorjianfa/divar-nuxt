@@ -1,8 +1,11 @@
 <template>
   <div>
-    <div class="tw-py-5 tw-bg-red-200">
+    <div class="tw-py-5">
       <TopHeaderButtons />
     </div>
+
+    <HeaderSearch />
+
     <div class="tw-py-5"><CardMainButtons /></div>
 
     <CardLastVisit
@@ -11,7 +14,6 @@
       img="flower.jpg"
     />
     <ListPictureNote v-for="(item, i) in list" :key="i" v-bind="item" />
-
 
     <div class="tw-my-20"><ListAboveInformation /></div>
     <div class="text-information-list tw-text-gray-500">metrazh :</div>
