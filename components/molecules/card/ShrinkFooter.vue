@@ -13,18 +13,18 @@
             >
           </div>
 
-          <div class="tw-w-full tw-h-full tw-max-w-[248px] tw-max-h-10">
+          <div class="tw-w-full tw-h-full tw-max-w-[248px] tw-max-h-10 tw-mt-4">
             <div class="tw-flex tw-justify-center tw-items-center tw-w-full">
               <div
                 class="tw-flex tw-items-center"
                 v-for="(item, i) in svg"
                 :key="i"
               >
-                <a href="#" class="tw-w-10 tw-h-10 tw-flex tw-justify-center tw-mx-4">
+                <a href="#" class="tw-w-10 tw-h-10 tw-flex tw-justify-center tw-mx-1">
                   <img
                     :src="'img/' + item.img"
                     alt=""
-                    class="hover:tw-bg-gray-600/20   tw-w-full tw-h-full tw-max-w-[20px] tw-max-h-5 tw-flex"
+                    class="hover:tw-bg-gray-600 hover:tw-rounded-full   tw-w-full tw-h-full tw-max-w-[20px] tw-max-h-5 tw-flex"
                   />
                 </a>
               </div>

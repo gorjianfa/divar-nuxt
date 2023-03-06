@@ -50,7 +50,7 @@
           </div>
           <!--footer-->
           <div class="">
-            <CardFooterItems v-for="(item, i) in items" :key="i" />
+            <CardShrinkFooter v-for="(item, i) in items" :key="i" v-bind="item" />
           </div>
         </div>
       </div>

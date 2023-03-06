@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <div class="tw-container tw-bg-white">
       <div class="tw-flex tw-items-center tw-justify-between tw-py-4">
         <div class="tw-flex tw-items-center tw-gap-2">

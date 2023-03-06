@@ -1,5 +1,20 @@
 <template>
-  <div>
+  <div class=" tw-flex tw-flex-col">
+    <div class="tw-bg-rose-300 tw-w-full">
+      <TopHeaderAccess class="" />
+    </div>
+
+    <ListSupportSugestion />
+
+    <div class="">
+      <button
+        class="tw-w-full tw-bg-rose-100 tw-max-w-[100px] tw-px-4 tw-h-full tw-max-h-[40px]"
+      >
+        <span class="tw-font-medium tw-text-base tw-text-gray-600"
+          >nothing</span
+        >
+      </button>
+    </div>
     <div class="tw-py-5">
       <TopHeaderButtons />
     </div>
@@ -53,7 +68,12 @@
     <ListUserWebsite class="tw-flex tw-justify-center" />
     <ListInternalList class="tw-flex tw-justify-center tw-my-5" />
 
-    <div class="tw-my-10"><ListBaseCategoryBranches /></div>
+    <div class="tw-my-10">
+      <ListBaseCategoryBranches /></div>
+
+
+
+ <div class=""> <CardSteretchFooter v-for="(item,i) in items" :key="i" v-bind="item" /></div>  
   </div>
 </template>
 
@@ -68,6 +88,25 @@ export default {
             { img: 'bathroom.jpg' },
             { img: 'bedroom.jpg' },
             { img: 'kitchen.jpg' },
+          ],
+        },
+      ],
+
+      items: [
+        {
+          features: [
+            { access: 'دربارۀ دیوار' },
+            { access: 'دریافت برنامه' },
+            { access: 'بلاگ دیوار' },
+            { access: 'پشتیبانی و قوانین' },
+            { access: 'تماس با پشتیبانی' },
+          ],
+          svg: [
+            { img: 'twitter.svg' },
+            { img: 'linkedin.svg' },
+            { img: 'instagram.svg' },
+
+            { img: 'film.svg' },
           ],
         },
       ],

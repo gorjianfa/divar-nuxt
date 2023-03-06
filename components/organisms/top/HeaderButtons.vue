@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="">
-      <div class="tw-flex tw-gap-2 tw-items-center tw-m-3">
+      <div class="tw-flex  tw-items-center tw-m-3">
         <AppButton
           v-for="(item, i) in lists"
           :key="i"
           v-bind="item"
-          class="tw-w-full tw-max-w-[100px]"
+          class=" "
         />
       </div>
     </div>

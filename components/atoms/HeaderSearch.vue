@@ -3,7 +3,7 @@
     <div
       class="tw-w-full tw-max-w-[480px] tw-h-auto tw-rounded tw-shadow tw-bg-gray-100 focus-within:tw-bg-white focus:tw-bg-white"
     >
-      <div class="tw-flex tw-items-center tw-justify-between tw-px-2 tw-py-2.5">
+      <div class="tw-flex tw-items-center tw-justify-between tw-px-2 tw-py-2.5 ">
         <div
           class="tw-flex tw-items-center tw-justify-center tw-gap-3 tw-w-full tw-h-full"
         >
