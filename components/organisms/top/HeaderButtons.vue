@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="">
-      <div class="tw-flex  tw-items-center tw-m-3">
+      <div class="tw-flex tw-items-center">
         <AppButton
           v-for="(item, i) in lists"
           :key="i"

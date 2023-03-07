@@ -1,16 +1,14 @@
 <template>
   <div>
-    <div class="tw-w-full tw-h-full tw-max-h-16 tw-bg-white tw-shadow-md">
+    <div class="tw-w-full  tw-h-16 tw-bg-white tw-shadow-md">
       <div class="tw-flex tw-items-center tw-justify-center">
-        <div class="tw-px-4">
-          <div class="tw-flex tw-items-center">
-            <div
-              class=" tw-px-2"
-            >
+        <div class="tw-px-2">
+          <div class="tw-flex tw-items-center tw-gap-2">
+            <div class="tw-px-2">
               <img
                 src="img/logo.svg"
                 alt=""
-                class="tw-w-full tw-h-full tw-min-w-[48px] tw-min-h-[48px] tw-flex tw-pl-2"
+                class="tw-w-[48px] tw-h-[48px] tw-flex tw-pl-2"
               />
             </div>
 
@@ -19,7 +17,7 @@
               title=" بابلسر"
               variant="hover"
               textSize="xSmall"
-              class=" tw-border-r tw-border-solid tw-border-0 tw-border-r-gray-300 tw-mr-2"
+              class="tw-border-r tw-border-solid tw-border-0 tw-border-r-gray-300 tw-mr-2 tw-pr-2"
             />
 
             <AppButton
@@ -32,7 +30,7 @@
 
             <HeaderSearch class="tw-w-full tw-min-w-[480px] tw-px-2 tw-mb-2" />
 
-            <TopHeaderButtons  class=" tw-mr-32"/>
+            <TopHeaderButtons class="" />
           </div>
         </div>
       </div>

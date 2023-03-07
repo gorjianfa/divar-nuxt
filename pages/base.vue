@@ -1,9 +1,18 @@
 <template>
-  <div class=" tw-flex tw-flex-col">
+  <div class="tw-flex tw-flex-col">
     <div class="tw-bg-rose-300 tw-w-full">
       <TopHeaderAccess class="" />
     </div>
 
+<NewArt/>
+
+
+
+    <div class="tw-py-5"><CardSavePost /></div>
+
+    <div class="tw-my-5">
+      <CardBusinessItem />
+    </div>
     <ListSupportSugestion />
 
     <div class="">
@@ -69,11 +78,12 @@
     <ListInternalList class="tw-flex tw-justify-center tw-my-5" />
 
     <div class="tw-my-10">
-      <ListBaseCategoryBranches /></div>
+      <ListBaseCategoryBranches />
+    </div>
 
-
-
- <div class=""> <CardSteretchFooter v-for="(item,i) in items" :key="i" v-bind="item" /></div>  
+    <div class="">
+      <CardSteretchFooter v-for="(item, i) in items" :key="i" v-bind="item" />
+    </div>
   </div>
 </template>
 

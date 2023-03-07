@@ -6,7 +6,7 @@
           <div class="tw-flex tw-items-center tw-gap-2 tw-w-full">
             <div class="tw-w-full tw-max-w-[126px]">
               <AppButton
-              href="https://www.cyvision.com"
+                href="https://www.cyvision.com"
                 class="tw-w-full"
                 title="اطلاعات تماس"
                 variant="fill"
@@ -15,7 +15,7 @@
             </div>
             <div class="tw-w-full tw-max-w-[126px]">
               <AppButton
-               href="https://www.cyvision.com"
+                href="https://www.cyvision.com"
                 title="چت"
                 variant="outline"
                 textSize="baseGray"
@@ -26,7 +26,7 @@
           <div class="tw-flex tw-items-center">
             <div class="tw-group">
               <button
-                class="tw-border-hidden tw-bg-white tw-cursor-pointer tw-p-2 group-hover:tw-bg-gray-100 group-hover:tw-rounded-full"
+                class="tw-border-hidden tw-bg-white tw-cursor-pointer tw-p-2  group-hover:tw-rounded-full group-hover:tw-bg-red-50"
               >
                 <!--save svg-->
                 <svg
@@ -36,6 +36,13 @@
                   stroke-width="1.5"
                   stroke="#6b7280"
                   class="tw-w-full tw-h-full tw-max-w-[20px] tw-max-h-5 tw-flex tw-stroke-gray-500"
+                  @focus="fillSvg = true"
+                  @blur="fillSvg = false"
+                  :class="
+                    fillSvg
+                      ? 'tw-fill-red-600 tw-outline-none tw-stroke-none group-hover:tw-bg-red-50 '
+                      : 'group-hover:tw-bg-gray-100 tw-stroke-gray-500 '
+                  "
                 >
                   <path
                     stroke-linecap="round"
@@ -74,7 +81,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      fillSvg: false,
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>

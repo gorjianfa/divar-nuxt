@@ -1,7 +1,7 @@
 <template>
   <div class="tw-container">
     <div class="border-top tw-my-4">
-      <div class="tw-items-center tw-flex">
+      <div class=" tw-flex tw-items-center tw-gap-2.5">
         <ListSupportLaw v-for="(item, i) in list" :key="i" v-bind="item" />
       </div>
     </div>

@@ -3,7 +3,7 @@
     <div
       class="tw-w-full tw-max-w-[480px] tw-h-auto tw-rounded tw-shadow tw-bg-gray-100 focus-within:tw-bg-white focus:tw-bg-white"
     >
-      <div class="tw-flex tw-items-center tw-justify-between tw-px-2 tw-py-2.5 ">
+      <div class="tw-flex tw-items-center tw-justify-between tw-px-2 tw-py-2">
         <div
           class="tw-flex tw-items-center tw-justify-center tw-gap-3 tw-w-full tw-h-full"
         >
@@ -24,10 +24,11 @@
           <!--input-->
           <div class="tw-w-full">
             <input
-              @click="removePlaceholder"
+              @focus="isFocused = true"
+              @blur="isFocused = false"
               type="text"
               class="tw-outline-none tw-border-hidden focus-within:tw-bg-white focus:tw-bg-white tw-bg-gray-100 tw-w-full tw-max-w-[350px] tw-text-sm tw-font-normal tw-text-gray-800"
-              :placeholder="placeholder"
+              :placeholder="isFocused ? '' : placeholder"
               v-model="inputText"
             />
           </div>
@@ -62,16 +63,14 @@ export default {
   data() {
     return {
       inputText: '',
-      placeholder:' جستجوی در همه آگهی ها',
+      placeholder: ' جستجوی در همه آگهی ها',
+      isFocused: false,
     }
   },
 
   methods: {
     removeText() {
       this.inputText = ''
-    },
-    removePlaceholder() {
-      this.placeholder = ''
     },
   },
 }
