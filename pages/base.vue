@@ -5,7 +5,7 @@
     </div>
 
 <NewArt/>
-
+<input type="checkbox" name="" id="" class="tw-accent-red-700 tw-w-5 tw-h-5 tw-cursor-pointer">
 
 
     <div class="tw-py-5"><CardSavePost /></div>
