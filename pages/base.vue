@@ -4,9 +4,35 @@
       <TopHeaderAccess class="" />
     </div>
 
-<NewArt/>
-<input type="checkbox" name="" id="" class="tw-accent-red-700 tw-w-5 tw-h-5 tw-cursor-pointer">
+    <div
+      class="tw-bg-white hover:tw-bg-red-50 hover:tw-rounded-full tw-pr-1.5 tw-pt-1.5 tw-pl-3 tw-pb-3 tw-w-5 tw-h-5"
+    >
+      <input
+        type="checkbox"
+        name=""
+        id=""
+        class="tw-accent-red-700 tw-w-5 tw-h-5 tw-cursor-pointer tw-flex"
+      />
+    </div>
 
+    <CardSelectLocation />
+    <div class="tw-cursor-pointer tw-p-1">
+      <!--close svg-->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
+        class="tw-w-full tw-max-w-[16px] tw-h-4 tw-stroke-red-600 tw-flex hover:tw-rounded-full hover:tw-bg-red-100"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M13.4138 12.0003L16.2428 9.17134C16.6338 8.78134 16.6338 8.14834 16.2428 7.75734C15.8518 7.36734 15.2198 7.36734 14.8288 7.75734L11.9998 10.5863L9.1718 7.75734C8.7808 7.36734 8.1478 7.36734 7.7578 7.75734C7.3668 8.14834 7.3668 8.78134 7.7578 9.17134L10.5858 12.0003L7.7578 14.8293C7.3668 15.2193 7.3668 15.8523 7.7578 16.2433C7.9528 16.4383 8.2088 16.5363 8.4648 16.5363C8.7208 16.5363 8.9768 16.4383 9.1718 16.2433L11.9998 13.4143L14.8288 16.2433C15.0238 16.4383 15.2798 16.5363 15.5358 16.5363C15.7918 16.5363 16.0478 16.4383 16.2428 16.2433C16.6338 15.8523 16.6338 15.2193 16.2428 14.8293L13.4138 12.0003Z"
+        ></path>
+      </svg>
+    </div>
+    <SimpleCheckbox />
 
     <div class="tw-py-5"><CardSavePost /></div>
 
@@ -90,6 +116,7 @@
 <script>
 export default {
   name: 'BasePage',
+  // layouts: 'dashboard',
   data() {
     return {
       list: [

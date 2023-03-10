@@ -5,20 +5,14 @@
       price="50000000"
       timeOraddres="2day a go"
       amountOfuse="new"
-    img="farm.jpg"
+      img="farm.jpg"
     />
 
-<ListPictureNote/>
+    <ListPictureNote />
 
+    <ListSupportQuestion />
 
-
-
-
-<ListSupportQuestion/>
-
-<ListBranchesList/>
-
-   
+    <ListBranchesList />
 
     <div class="md:tw-hidden tw-flex tw-flex-col tw-gap-2">
       <div class="tw-text-base tw-text-blue-500">lololo</div>
@@ -46,6 +40,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  layout: 'dashboard',
   name: 'SdsdsFs',
 })
 </script>
