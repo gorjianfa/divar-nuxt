@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="tw-w-full tw-max-w-[412px] tw-h-12 border-bottem">
+    <div class="tw-w-full tw-max-w-[490px] tw-h-12 border-bottem">
       <div class="tw-py-2">
         <div
           class="tw-flex tw-justify-between tw-items-center tw-cursor-pointer"

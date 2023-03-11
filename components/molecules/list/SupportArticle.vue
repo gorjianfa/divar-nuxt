@@ -16,16 +16,17 @@
             {{ title }}
           </div>
           <div class="tw-flex tw-flex-col tw-gap-1">
-            <li
-              class="tw-cursor-pointer base-text-xs-hover tw-list-none"
+            <a
+              :href="link"
+              class="tw-cursor-pointer tw-no-underline base-text-xs-hover tw-list-none"
               v-for="(item, i) in features"
               :key="i"
             >
-              {{ item.question }} ?
-            </li>
+              {{ item.question }} 
+            </a>
           </div>
           <a
-            href=""
+            :href="href"
             class="tw-cursor-pointer tw-no-underline tw-font-normal tw-text-sm tw-text-red-700 tw-text-opacity-90"
             >موارد بیشتر</a
           >
@@ -42,7 +43,14 @@ export default {
       type: String,
       default: 'chat.png',
     },
-
+    href: {
+      type: String,
+      default: '#',
+    },
+    link: {
+      type: String,
+      default: '#',
+    },
     title: {
       type: String,
       default: '',

@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-10">
     <div class="tw-w-full  tw-h-16 tw-bg-white tw-shadow-md">
       <div class="tw-flex tw-items-center tw-justify-center">
-        <div class="tw-px-2">
+        <div class="tw-px-2 tw-py-2">
           <div class="tw-flex tw-items-center tw-gap-2">
             <div class="tw-px-2">
               <img

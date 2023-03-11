@@ -1,21 +1,8 @@
 <template>
   <div class="tw-flex tw-flex-col">
-    <div class="tw-bg-rose-300 tw-w-full">
-      <TopHeaderAccess class="" />
+    <div class="">
+      <CardSelectLocation class=" tw-mt-20" />
     </div>
-
-    <div
-      class="tw-bg-white hover:tw-bg-red-50 hover:tw-rounded-full tw-pr-1.5 tw-pt-1.5 tw-pl-3 tw-pb-3 tw-w-5 tw-h-5"
-    >
-      <input
-        type="checkbox"
-        name=""
-        id=""
-        class="tw-accent-red-700 tw-w-5 tw-h-5 tw-cursor-pointer tw-flex"
-      />
-    </div>
-
-    <CardSelectLocation />
     <div class="tw-cursor-pointer tw-p-1">
       <!--close svg-->
       <svg

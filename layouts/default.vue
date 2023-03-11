@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TopHeaderAccess />
+    <TopHeaderAccess class="" />
     <Nuxt />
     <CardSteretchFooter />
   </div>
