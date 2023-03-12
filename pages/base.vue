@@ -1,8 +1,14 @@
 <template>
   <div class="tw-flex tw-flex-col">
     <div class="">
-      <CardSelectLocation class=" tw-mt-20" />
+
+ <FormPriceFluctuation  class="tw-mt-24"/>
+
+      <CardSelectLocation class="tw-mt-20" />
     </div>
+   
+    <SimpleSelect value="قیمت" />
+
     <div class="tw-cursor-pointer tw-p-1">
       <!--close svg-->
       <svg

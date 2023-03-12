@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div class="tw-px-2">
+ 
       <div
-        class="tw-w-full tw-h-full tw-max-w-[368px] tw-max-h-[170px]    sm:tw-max-h-[132px] tw-rounded tw-border-[1px] tw-border-solid tw-border-gray-200 tw-bg-white"
+        class=" tw-w-full tw-max-w-[343px] tw-max-h-[116px] tw-h-full  tw-rounded tw-border-[1px] tw-border-solid tw-border-gray-200 tw-bg-white"
       >
-        <a href="" class="tw-p-4 tw-flex tw-cursor-pointer tw-no-underline">
-          <div class="tw-w-full tw-max-w-[96px] tw-max-h-[83.98px]">
+      <div class="tw-p-4">
+        <a href="" class=" tw-flex tw-cursor-pointer tw-no-underline">
+          <div class="tw-w-full tw-max-w-[96px] tw-max-h-[83.98px] tw-h-full">
             <img
               :src="'img/last-visit/' + img"
               alt=""
@@ -67,7 +68,7 @@
           </div>
         </a>
       </div>
-    </div>
+     </div>
   </div>
 </template>
 
@@ -76,11 +77,11 @@ export default {
   props: {
     title: {
       type: String,
-      default: '',
+      default: 'asdfghjkl;lkjhgfcvbn',
     },
     uploadDate: {
       type: String,
-      default: '',
+      default: 'fghj',
     },
     img: {
       type: String,

@@ -1,6 +1,6 @@
 <template>
   <div class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 tw-gap-4">
-    <divcard v-for="card in cards" :key="card.id">
+    <div v-for="card in cards" :key="card.id">
       <div class="tw-w-full tw-max-w-[477px] tw-max-h-[115px] tw-px-2">
         <div class="tw-border tw-border-solid tw-border-gray-300 tw-rounded">
           <a :href="href" class="tw-no-underline">
@@ -78,7 +78,7 @@
           </a>
         </div>
       </div>
-    </divcard>
+    </div>
   </div>
 </template>
 

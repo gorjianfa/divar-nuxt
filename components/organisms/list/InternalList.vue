@@ -2,7 +2,7 @@
   <div>
     <div class="tw-py-8 tw-pl-4">
       <div class="">
-        <div class="tw-w-full tw-min-w-[240px] tw-h-auto">
+        <div class="tw-w-full tw-max-w-[240px] tw-h-auto">
           <div class="tw-flex tw-flex-col">
             <div
               class="tw-w-full tw-max-w-[214px] tw-h-full tw-max-h-12 tw-my-2"
@@ -47,23 +47,23 @@
               />
             </div>
 
-            <div class=" ">
+            <div class=" tw-w-full tw-max-w-[240px]">
               <div class="tw-flex tw-flex-col">
-                <div
-                  class="border-bottem border-top"
-                >
+                <div class="border-bottem border-top">
                   <ListInternalAccess
                     title="دیوار برای کسب‌وکارها"
                     img="store.svg"
                   />
                 </div>
-                <div
-                  class="border-bottem"
-                >
+                <div class="border-bottem">
                   <ListInternalAccess title="خروج " img="escape.svg" />
                 </div>
               </div>
             </div>
+
+<CardShrinkFooter   v-for="(item, i) in items" :key="i" v-bind="item" />
+
+ 
           </div>
         </div>
       </div>
@@ -84,28 +84,37 @@ export default {
     return {
       lists: [
         {
+          to: '/',
           title: 'تأیید هویت',
           img: 'identity.svg',
         },
+        { to: '/', title: 'آگهی‌های من', img: 'mynotice.svg' },
+        { to: '/', title: 'نشان‌ها', img: 'save.svg' },
+        { to: '/', title: 'امکان بیعانه', img: 'deposit.svg' },
+        { to: '/', title: 'یادداشت‌ها', img: 'note.svg' },
+        { to: '/', title: 'بازدیدهای اخیر', img: 'recentCheck.svg' },
+      ],
+       items: [
         {
-          title: 'آگهی‌های من',
-          img: 'mynotice.svg',
-        },
-        {
-          title: 'نشان‌ها',
-          img: 'save.svg',
-        },
-        {
-          title: 'امکان بیعانه',
-          img: 'deposit.svg',
-        },
-        {
-          title: 'یادداشت‌ها',
-          img: 'note.svg',
-        },
-        {
-          title: 'بازدیدهای اخیر',
-          img: 'recentCheck.svg',
+          features: [
+            { access: 'درباره دیوار' },
+            { access: 'دریافت برنامه' },
+            { access: 'بلاگ دیوار' },
+            { access: 'کسب وکار ها' },
+            { access: 'پشتیبانی و قوانین' },
+          ],
+          svg: [
+            { img: 'twitter.svg' },
+            { img: 'linkedin.svg' },
+            { img: 'instagram.svg' },
+
+            { img: 'film.svg' },
+          ],
+          consent: [
+            { picture: 'mojavez.png' },
+            { picture: 'mojavez2.png' },
+            { picture: 'mojavez3.png' },
+          ],
         },
       ],
     }

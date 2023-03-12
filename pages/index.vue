@@ -6,8 +6,7 @@
       timeOraddres="2day a go"
       amountOfuse="new"
       img="farm.jpg"
-    />
-
+    /><CardLastVisit />
     <ListPictureNote />
 
     <ListSupportQuestion />
@@ -40,7 +39,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  layout: 'dashboard',
-  name: 'SdsdsFs',
+  layout: 'support-user',
+  name: '',
 })
 </script>
