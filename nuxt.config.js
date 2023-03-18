@@ -36,7 +36,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/composition-api/module'
+    '@nuxtjs/composition-api/module',
+    "@nuxtjs/svg"
   ],
   publicRuntimeConfig: {
     nuxtLocale: 'fa',

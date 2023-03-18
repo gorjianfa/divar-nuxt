@@ -49,30 +49,21 @@ module.exports = {
   plugins: [
     plugin(function ({ addComponents, addVariant }) {
       addComponents({
-        '.container': {
-          maxWidth: '100%',
-          margin: '0 16px',
-          width: 'inherit',
+        ".container": {
+          maxWidth: "100%",
+          margin: "0 16px",
+          width: "inherit",
 
-          '@screen sm': {
-            maxWidth: '100%',
-            margin: '0 32px',
-            width: 'inherit',
+          "@screen sm": {
+            maxWidth: "100%",
+            margin: "0 32px",
+            width: "inherit",
           },
-          '@screen md': {
-            maxWidth: '840px',
-            margin: '0 auto',
-            width: '100%',
-          },
-          '@screen lg': {
-            maxWidth: '100%',
-            margin: '0 200px',
-            width: 'inherit',
-          },
-          '@screen xl': {
-            maxWidth: '1280px',
-            margin: '0 auto',
-            width: '100%',
+          "@screen xl": {
+            maxWidth: "1280px",
+            margin: "0 auto",
+            // padding: '0 32px',
+            width: "100%",
           },
         },
       })

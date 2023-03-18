@@ -5,7 +5,7 @@
         <div class="tw-flex tw-flex-col tw-gap-3">
           <div class="">
             <img
-              :src="'/img/support-list/' + img"
+              :src="require('@/assets/img/support-list/' + img)"
               alt=""
               class="tw-w-full tw-h-full tw-flex tw-max-w-[64px] tw-max-h-[64px]"
             />
@@ -22,7 +22,7 @@
               v-for="(item, i) in features"
               :key="i"
             >
-              {{ item.question }} 
+              {{ item.question }}
             </a>
           </div>
           <a

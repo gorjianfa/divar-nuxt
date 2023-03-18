@@ -47,12 +47,13 @@
               />
             </div>
 
-            <div class=" tw-w-full tw-max-w-[240px]">
+            <div class="tw-w-full tw-max-w-[240px]">
               <div class="tw-flex tw-flex-col">
                 <div class="border-bottem border-top">
                   <ListInternalAccess
                     title="دیوار برای کسب‌وکارها"
                     img="store.svg"
+                    to="/profile/for-business"
                   />
                 </div>
                 <div class="border-bottem">
@@ -61,9 +62,11 @@
               </div>
             </div>
 
-<CardShrinkFooter   v-for="(item, i) in items" :key="i" v-bind="item" />
-
- 
+            <CardShrinkFooter
+              v-for="(item, i) in items"
+              :key="i"
+              v-bind="item"
+            />
           </div>
         </div>
       </div>
@@ -84,17 +87,25 @@ export default {
     return {
       lists: [
         {
-          to: '/',
+          to: '/profile/identity',
           title: 'تأیید هویت',
-          img: 'identity.svg',
+          icon: 'identity',
         },
-        { to: '/', title: 'آگهی‌های من', img: 'mynotice.svg' },
-        { to: '/', title: 'نشان‌ها', img: 'save.svg' },
-        { to: '/', title: 'امکان بیعانه', img: 'deposit.svg' },
-        { to: '/', title: 'یادداشت‌ها', img: 'note.svg' },
-        { to: '/', title: 'بازدیدهای اخیر', img: 'recentCheck.svg' },
+        { to: '/profile/my-post', title: 'آگهی‌های من', icon: 'mynotice' },
+        { to: '/profile/bookmarks', title: 'نشان‌ها', icon: 'save' },
+        {
+          to: '/profile/transactions',
+          title: 'امکان بیعانه',
+          icon: 'deposit',
+        },
+        { to: '/profile/my-notes', title: 'یادداشت‌ها', icon: 'note' },
+        {
+          to: '/profile/recent-seen',
+          title: 'بازدیدهای اخیر',
+          icon: 'recentCheck',
+        },
       ],
-       items: [
+      items: [
         {
           features: [
             { access: 'درباره دیوار' },
@@ -104,11 +115,11 @@ export default {
             { access: 'پشتیبانی و قوانین' },
           ],
           svg: [
-            { img: 'twitter.svg' },
-            { img: 'linkedin.svg' },
-            { img: 'instagram.svg' },
+            { icon: 'twitter' },
+            { icon: 'linkedin' },
+            { icon: 'instagram' },
 
-            { img: 'film.svg' },
+            { icon: 'film' },
           ],
           consent: [
             { picture: 'mojavez.png' },

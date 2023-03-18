@@ -4,7 +4,7 @@
       <div class="tw-flex tw-flex-col">
         <span class="tw-font-medium tw-text-base tw-text-gray-700 ">{{ title }}</span>
         <span class="tw-font-normal tw-text-sm tw-text-gray-500 tw-mb-3 ">{{ description }}</span>
-        <a :href="href" class="tw-no-underline  tw-font-medium tw-text-sm tw-text-red-700">{{ endTitle }}</a>
+        <a :href="href" class="tw-no-underline tw-font-medium tw-text-sm tw-text-red-700">{{ endTitle }}</a>
       </div>
     </div>
   </div>

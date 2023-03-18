@@ -8,7 +8,7 @@
           </div>
           <div class="" v-if="picture">
             <img
-              :src="'img/user-profile/' + img"
+              :src="require('@/assets/img/user-profile/' + img)"
               alt=""
               class="tw-w-full tw-h-full tw-flex tw-max-w-[58px] tw-max-h-[58px]"
             />

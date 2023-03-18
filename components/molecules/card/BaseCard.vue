@@ -47,7 +47,7 @@
 
           <div class="">
             <img
-              :src="'img/main/' + img"
+              :src="require('@/assets/img/main/' + img )"
               alt=""
               class="tw-flex tw-w-full tw-h-full tw-max-w-[136px] tw-max-h-[140px] tw-rounded-md tw-mr-1"
             />
@@ -75,7 +75,7 @@ export default {
     },
     amountOfuse: {
       type: String,
-      default: '', 
+      default: '',
     },
     img: {
       type: String,

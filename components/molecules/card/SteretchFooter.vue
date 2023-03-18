@@ -5,7 +5,7 @@
         <div class="tw-flex tw-items-center tw-gap-2">
           <div class="">
             <img
-              src="img/footer-logo.svg"
+              :src="require('@/assets/img/footer-logo.svg')"
               alt=""
               class="tw-w-full tw-h-full tw-max-h-[32px] tw-max-w-[32px] tw-flex"
             />
@@ -26,7 +26,7 @@
         <div class="tw-flex tw-items-center tw-gap-5">
           <a v-for="(item, i) in svg" :key="i" href="#" class="tw-no-underline"
             ><img
-              :src="'img/' + item.img"
+              :src="require('@/assets/img/' + item.img)"
               alt=""
               class="tw-w-full tw-h-full tw-flex tw-max-w-[20px] tw-max-h-5"
           /></a>

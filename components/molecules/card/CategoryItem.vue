@@ -1,9 +1,9 @@
 <template>
   <div class="tw-group">
     <div
-      class="tw-w-full tw-h-full tw-max-w-[160px] tw-max-h-8 tw-bg-white group-hover:tw-bg-gray-100 group-hover:tw-rounded "
+      class="tw-w-full tw-h-full tw-max-w-[160px] tw-max-h-8 tw-bg-white group-hover:tw-bg-gray-100 group-hover:tw-rounded"
     >
-      <div class="tw-px-2  tw-py-1">
+      <div class="tw-px-2 tw-py-1">
         <div
           class="tw-flex tw-items-center tw-justify-between tw-cursor-pointer"
         >
@@ -11,7 +11,7 @@
             <!--svg and title-->
             <div class="">
               <img
-                :src="'img/' + img"
+                :src="require('@/assets/img/' + img)"
                 alt=""
                 class="tw-flex tw-w-full tw-h-full tw-max-h-[16px] tw-max-w-[16px]"
               />

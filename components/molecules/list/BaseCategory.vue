@@ -4,7 +4,7 @@
       <div class="tw-py-2 tw-flex tw-items-center tw-gap-2.5">
         <div class="" v-if="img">
           <img
-            :src="'img/' + img"
+              :src="require('@/assets/img/' + img)"
             alt=""
             class="tw-w-full tw-h-full tw-flex tw-max-w-[20px] tw-max-h-5"
           />
@@ -47,9 +47,7 @@
 <script>
 export default {
   data() {
-    return {
- 
-    }
+    return {}
   },
 
   props: {
@@ -79,7 +77,6 @@ export default {
       default: () => [],
     },
   },
-   
 }
 </script>
 

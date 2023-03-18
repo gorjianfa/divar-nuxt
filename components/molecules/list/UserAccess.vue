@@ -7,13 +7,13 @@
         <nuxt-link :to="to" class="tw-no-underline">
           <div class="tw-flex tw-flex-col tw-mt-2">
             <div class="tw-flex tw-gap-2 tw-py-1 tw-items-center">
-              <div class="">
-                <img
-                  :src="'img/' + img"
-                  alt=""
-                  class="tw-w-full tw-max-w-[16px] tw-max-h-4 tw-flex"
+           
+                
+                <Component
+                  :is="icon"
+                  class="tw-w-full tw-max-w-[16px] tw-max-h-4 tw-flex tw-stroke-gray-500 group-hover:tw-stroke-gray-900"
                 />
-              </div>
+           
               <div class="">
                 <span class="base-text-sm group-hover:tw-text-gray-900">{{
                   item
@@ -28,17 +28,39 @@
 </template>
 
 <script>
+import identity from '~/assets/img/identity.svg?inline'
+import mynotice from '~/assets/img/mynotice.svg?inline'
+import save from '~/assets/img/save.svg?inline'
+import note from '~/assets/img/note.svg?inline'
+import deposit from '~/assets/img/deposit.svg?inline'
+import RecentCheck from '~/assets/img/recentCheck.svg?inline'
+import store from '~/assets/img/store.svg?inline'
+import escape from '~/assets/img/escape.svg?inline'
 export default {
+  name: 'ListUserAccess',
   props: {
-    item: { type: String, default: 'اگهی های من' },
-    img: {
+    item: {
       type: String,
-      default: 'escape.svg',
+      default: 'اگهی های من',
+    },
+    icon: {
+      type: String,
+      default: '',
     },
     to: {
       type: String,
-      default: '# ',
+      default: '#',
     },
+  },
+  components: {
+    identity,
+    mynotice,
+    save,
+    note,
+    deposit,
+    RecentCheck,
+    store,
+    escape,
   },
 }
 </script>

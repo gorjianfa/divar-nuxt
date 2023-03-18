@@ -1,14 +1,13 @@
 <template>
   <div>
- 
-      <div
-        class=" tw-w-full tw-max-w-[343px] tw-max-h-[116px] tw-h-full  tw-rounded tw-border-[1px] tw-border-solid tw-border-gray-200 tw-bg-white"
-      >
+    <div
+      class="tw-w-full tw-max-w-[343px] tw-max-h-[116px] tw-h-full tw-rounded tw-border-[1px] tw-border-solid tw-border-gray-200 tw-bg-white"
+    >
       <div class="tw-p-4">
-        <a href="" class=" tw-flex tw-cursor-pointer tw-no-underline">
+        <a href="" class="tw-flex tw-cursor-pointer tw-no-underline">
           <div class="tw-w-full tw-max-w-[96px] tw-max-h-[83.98px] tw-h-full">
             <img
-              :src="'img/last-visit/' + img"
+              :src="require('@/assets/img/last-visit/' + img)"
               alt=""
               class="tw-w-full tw-h-full tw-max-w-[80px] tw-max-h-[80px] tw-rounded-md"
             />
@@ -20,7 +19,9 @@
               <span class="tw-font-medium tw-text-sm tw-text-black">{{
                 title
               }}</span>
-              <span class="base-text-xs tw-mt-1 tw-whitespace-nowrap"> {{ uploadDate }}</span>
+              <span class="base-text-xs tw-mt-1 tw-whitespace-nowrap">
+                {{ uploadDate }}</span
+              >
             </div>
             <!--share and remove svg-->
             <div class="tw-flex tw-mt-2 tw-gap-1 tw-justify-end">
@@ -68,7 +69,7 @@
           </div>
         </a>
       </div>
-     </div>
+    </div>
   </div>
 </template>
 
@@ -77,11 +78,11 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'asdfghjkl;lkjhgfcvbn',
+      default: ' apartment',
     },
     uploadDate: {
       type: String,
-      default: 'fghj',
+      default: '2 years ago ',
     },
     img: {
       type: String,

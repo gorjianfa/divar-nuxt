@@ -1,14 +1,21 @@
 <template>
   <div class="">
-    <div class="tw-flex tw-mt-20">
+    <div class="tw-flex tw-mt-20 tw-container">
       <div class=""><ListInternalList class="" /></div>
 
-      <div class="tw-grid tw-grid-cols-3 tw-gap-4 tw-w-full tw-h-full tw-py-8 tw-pr-4">
+      <div
+        class="tw-grid tw-grid-cols-3 tw-gap-4 tw-w-full tw-h-full tw-py-8 tw-pr-4"
+      >
         <CardLastVisit
           v-for="(item, i) in list"
           :key="i"
           v-bind="item"
           class=" "
+        />
+
+        <CenterDashboard
+          v-if="show"
+          description="  اخیراً از هیچ آگهی‌ای بازدید نکرده‌اید."
         />
       </div>
     </div>
@@ -17,9 +24,10 @@
 
 <script>
 export default {
-  layout: 'Dashboard',
+  layout: 'dashboard',
   data() {
     return {
+      show: false,
       list: [
         {
           title: 'گوسفند ماده ',

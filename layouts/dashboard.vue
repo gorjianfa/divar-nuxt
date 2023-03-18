@@ -8,14 +8,14 @@
               <div class="tw-flex tw-items-center tw-gap-2">
                 <div class="tw-px-2">
                   <img
-                    src="img/logo.svg"
+                    :src="require('@/assets/img/logo.svg')"
                     alt=""
                     class="tw-w-[48px] tw-h-[48px] tw-flex tw-pl-2"
                   />
                 </div>
 
                 <AppButton
-                  prependIcon="location.svg"
+                  prependIcon="location"
                   title=" بابلسر"
                   variant="hover"
                   textSize="xSmall"
@@ -31,7 +31,6 @@
     </div>
 
     <Nuxt />
-    
   </div>
 </template>
 

@@ -1,13 +1,13 @@
 <template>
-  <div class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 tw-gap-4">
+  <div class="tw-grid tw-grid-cols-3 tw-gap-4">
     <div v-for="card in cards" :key="card.id">
-      <div class="tw-w-full tw-max-w-[477px] tw-max-h-[115px] tw-px-2">
+      <div class="tw-w-full tw-max-w-[337px] tw-max-h-[115px] tw-px-2">
         <div class="tw-border tw-border-solid tw-border-gray-300 tw-rounded">
           <a :href="href" class="tw-no-underline">
             <div class="tw-flex tw-items-center tw-gap-3 tw-p-4">
               <div class="">
                 <img
-                  :src="'img/main/' + card.img"
+                  :src="require('@/assets/img/main/' + card.img)"
                   alt=""
                   class="tw-w-full tw-flex tw-max-w-[80px] tw-h-[80px] tw-rounded"
                 />
@@ -84,7 +84,7 @@
 
 <script>
 export default {
-  /*  props: {
+ props: {
     img: {
       type: String,
       default: 'building.jpg',
@@ -105,7 +105,7 @@ export default {
       type: String,
       default: '#',
     },
- }, */
+ }, 
   data() {
     return {
       cards: [
@@ -133,6 +133,15 @@ export default {
           title: 'باغ  مرکبات  ',
           uploadTime: 'لحاظاتی پیش',
           city: 'بابل',
+          href: '#',
+        },
+        {
+          id: 3,
+
+          img: 'farm.jpg',
+          title: 'باغ   رطب  ',
+          uploadTime: 'لحاظاتی پیش',
+          city: 'اهواز',
           href: '#',
         },
       ],

@@ -6,7 +6,7 @@
           <div class="tw-max-w-[488px] tw-h-auto tw-w-full tw-relative">
             <div class="">
               <img
-                src="img/products-img/house.jpg"
+                :src="require('@/assets/img/products-img/' + img)"
                 alt=""
                 class="tw-w-full tw-h-full tw-max-w-[488px] tw-max-h-[366px] tw-flex tw-rounded"
               />
@@ -52,7 +52,7 @@
             <div class="tw-flex tw-items-center tw-gap-3 tw-w-full">
               <div class="" v-for="(item, i) in picture" :key="i">
                 <img
-                  :src="'img/products-img/' + item.img"
+                  :src="require('@/assets/img/products-img/' + item.img)"
                   alt=""
                   class="tw-w-[68px] tw-h-[68px] tw-flex tw-rounded"
                 />
@@ -148,6 +148,10 @@ export default {
     picture: {
       type: Array,
       default: () => [],
+    },
+    img: {
+      type: String,
+      default: 'house.jpg',
     },
   },
   data() {

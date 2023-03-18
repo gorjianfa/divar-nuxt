@@ -1,13 +1,14 @@
 <template>
   <div>
     <div
-      class="  tw-w-full tw-max-w-[610px] tw-h-full tw-max-h-24 tw-border-solid tw-border tw-border-gray-300 tw-mb-4 tw-group"
+      class="tw-rounded-sm  tw-w-[514px] tw-h-full tw-max-h-24 tw-border-solid tw-border tw-border-gray-300 tw-mb-4 tw-group"
     >
-      <a :href="href" class="tw-no-underline ">
-        <div class="tw-flex tw-items-center  tw-p-4">
-          <div class="tw-ml-4">
+      <a :href="href" class="tw-no-underline">
+        <div class="tw-flex tw-items-center tw-p-4 ">
+          <div class="tw-ml-4 ">
             <img
-              :src="'img/business/' + img"
+             :src="require('@/assets/img/business/' + img)"
+             
               alt=""
               class="tw-w-full tw-max-w-[64px] tw-max-h-16 tw-flex"
             />

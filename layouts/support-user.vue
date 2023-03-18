@@ -2,23 +2,40 @@
   <div>
     <div class="tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-10">
       <div class="tw-w-full tw-h-16 tw-bg-white tw-shadow-md">
-        <div class="tw-flex tw-w-full tw-items-center tw-px-2 tw-py-2 ">
-          <div class="tw-flex tw-items-center tw-w-full tw-justify-between tw-container">
-            <div class="tw-px-2 ">
+        <div class="tw-flex tw-w-full tw-items-center tw-px-2 tw-py-2">
+          <div
+            class="tw-flex tw-items-center tw-w-full tw-justify-between tw-container"
+          >
+            <div class="tw-px-2">
               <img
-                src="img/logo.svg"
+                :src="require('@/assets/img/logo.svg')"
                 alt=""
                 class="tw-w-[48px] tw-h-[48px] tw-flex tw-pl-2"
               />
             </div>
 
-            <div class="tw-flex tw-items-center ">
-              <AppButton
-                v-for="(item, i) in lists"
-                :key="i"
-                v-bind="item"
-                class=" "
-              />
+            <div class="tw-flex tw-items-center">
+              <OnClickOutside @trigger="hideCard">
+                <div class="tw-flex tw-flex-col tw-relative">
+                  <AppButton
+                    @click="OnClickOutside"
+                    title="دیوارمن"
+                    prepend-icon="user"
+                    text-size="xSmall"
+                    variant="hover"
+                  />
+                  <div class="tw-absolute tw-top-16">
+                    <ListUserWebsite v-if="showList" />
+                  </div></div
+              ></OnClickOutside>
+              <div class="tw-flex tw-items-center">
+                <AppButton
+                  v-for="(item, i) in lists"
+                  :key="i"
+                  v-bind="item"
+                  class=" "
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -26,14 +43,18 @@
     </div>
 
     <Nuxt />
+
     <CardSteretchFooter v-for="(item, i) in items" :key="i" v-bind="item" />
   </div>
 </template>
 
 <script>
+import { OnClickOutside } from '@vueuse/components'
+
 export default {
   data() {
     return {
+      showList: false,
       items: [
         {
           features: [
@@ -55,25 +76,30 @@ export default {
 
       lists: [
         {
-          title: 'دیوارمن',
-          prependIcon: 'user.svg',
-          textSize: 'xSmall',
-          variant: 'hover',
-        },
-        {
           title: 'پشتیبانی',
           textSize: 'xSmall',
           variant: 'hover',
+          to: '/support-users',
         },
         {
           title: 'چت',
           prependIcon: 'chat.svg',
           variant: 'hover',
           textSize: 'xSmall',
-          href: '/dfghjk',
+          to: '/base',
         },
       ],
     }
+  },
+  components: { OnClickOutside },
+
+  methods: {
+    OnClickOutside() {
+      this.showList = !this.showList
+    },
+    hideCard() {
+      this.showList = null
+    },
   },
 }
 </script>

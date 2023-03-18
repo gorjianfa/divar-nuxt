@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="tw-w-full tw-h-auto tw-max-w-[556px] tw-bg-white tw-rounded ">
+    <div class="tw-w-full tw-h-auto tw-max-w-[556px] tw-bg-white tw-rounded">
       <div class="">
         <div
-          class="tw-w-full tw-max-w-[490px] tw-h-auto tw-pt-8 tw-px-8 tw-pb-4 border-bottem tw-bg-white "
+          class="tw-w-full tw-max-w-[490px] tw-h-auto tw-pt-8 tw-px-8 tw-pb-4 border-bottem tw-bg-white"
         >
           <div class="tw-flex tw-flex-col tw-gap-3">
             <div class="tw-flex tw-justify-between tw-items-center">
@@ -19,7 +19,8 @@
 
             <!--choose a  city-->
             <div class="">
-              <div class="" v-if="x">
+              <!--v-if="x"-->
+              <div class="">
                 <span class="tw-font-normal tw-text-base tw-text-gray-500">
                   حداقل یک شهر را انتخاب کنید</span
                 >

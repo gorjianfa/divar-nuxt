@@ -20,11 +20,13 @@
                 v-for="(item, i) in svg"
                 :key="i"
               >
-                <a href="#" class="tw-w-10 tw-h-10 tw-flex tw-justify-center tw-mx-1">
-                  <img
-                    :src="'img/' + item.img"
-                    alt=""
-                    class="hover:tw-bg-gray-600 hover:tw-rounded-full   tw-w-full tw-h-full tw-max-w-[20px] tw-max-h-5 tw-flex"
+                <a
+                  :href="href"
+                  class="tw-w-10 tw-h-10 tw-flex tw-justify-center tw-mx-1"
+                >
+                  <Component
+                    :is="item.icon"
+                    class="hover:tw-fill-gray-400  tw-w-full tw-h-full tw-max-w-[20px] tw-max-h-5 tw-flex"
                   />
                 </a>
               </div>
@@ -39,7 +41,7 @@
             <div class="tw-flex tw-items-center tw-gap-2">
               <div class="" v-for="(item, i) in consent" :key="i">
                 <img
-                  :src="'img/' + item.picture"
+                  :src="require('@/assets/img/' + item.picture)"
                   alt=""
                   class="tw-w-full tw-h-full tw-max-w-[80px] tw-max-h-20 tw-flex"
                 />
@@ -53,6 +55,11 @@
 </template>
 
 <script>
+import twitter from '~/assets/img/twitter.svg?inline'
+import linkedin from '~/assets/img/linkedin.svg?inline'
+import instagram from '~/assets/img/instagram.svg?inline'
+import film from '~/assets/img/film.svg?inline'
+
 export default {
   props: {
     features: {
@@ -63,12 +70,16 @@ export default {
       type: Array,
       default: () => [],
     },
-
+    href: {
+      type: String,
+      default: '',
+    },
     consent: {
       type: Array,
       default: () => [],
     },
   },
+  components: { twitter, linkedin, instagram, film },
 }
 </script>
 

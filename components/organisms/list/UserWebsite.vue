@@ -57,17 +57,25 @@ export default {
     return {
       items: [
         {
-          to: '/identity',
+          to: '/profile/identity',
           item: 'تایید هویت',
-          img: 'identity.svg',
+          icon: 'identity',
         },
-        { to: '/my-post', item: 'اگهی های من', img: 'mynotice.svg' },
-        { to: '/bookmarks', item: 'نشان ها', img: 'save.svg' },
-        { to: '/my-notes', item: 'یادداشت ها', img: 'note.svg' },
-        { to: '/transactions', item: 'بیعانه', img: 'deposit.svg' },
-        { to: '/recent-seen', item: 'بازدیدهای اخیر', img: 'recentCheck.svg' },
-        { to: '/for-business', item: 'دیوار برای کسب و کارها', img: 'store.svg' },
-        { to: '/', item: 'خروج', img: 'escape.svg' },
+        { to: '/profile/my-post', item: 'اگهی های من', icon: 'mynotice' },
+        { to: '/profile/bookmarks', item: 'نشان ها', icon: 'save' },
+        { to: '/profile/my-notes', item: 'یادداشت ها', icon: 'note' },
+        { to: '/profile/transactions', item: 'بیعانه', icon: 'deposit' },
+        {
+          to: '/profile/recent-seen',
+          item: 'بازدیدهای اخیر',
+          icon: 'recentCheck',
+        },
+        {
+          to: '/profile/for-business',
+          item: 'دیوار برای کسب و کارها',
+          icon: 'store',
+        },
+        { to: '/', item: 'خروج', icon: 'escape' },
       ],
     }
   },

@@ -201,7 +201,7 @@ export default {
 
         //  نقلیه وسایل
         {
-          img: 'transporter.svg ',
+          img: 'transporter.svg',
           title: 'وسایل نقلیه',
           parent: 'root',
           key: ' vehicles',
@@ -224,7 +224,7 @@ export default {
         // // // // //  کالای دیجیتال
 
         {
-          img: 'digitaly.svg ',
+          img: 'digitaly.svg',
           title: 'کالای دیجیتال',
           parent: 'root',
           key: 'electronic-devices ',
@@ -320,7 +320,7 @@ export default {
         // // // / خانه و آشپزخانه
 
         {
-          img: 'kitchen.svg ',
+          img: 'kitchen.svg',
           title: 'خانه و اشپزخانه',
           parent: 'root',
           key: 'home-kitchen ',
@@ -637,7 +637,7 @@ export default {
         },
         // // // // // //  خدمات
         {
-          img: 'services.svg ',
+          img: 'services.svg',
           title: 'خدمات',
           parent: 'root',
           key: 'services ',
@@ -689,7 +689,7 @@ export default {
         // // // // / لوازم شخصی
 
         {
-          img: 'privateDevice.svg ',
+          img: 'privateDevice.svg',
           title: 'وسایل شخصی',
           parent: 'root',
           key: ' personal-goods',
@@ -744,7 +744,7 @@ export default {
 
         // // //  سرگرمی و فراغت
         {
-          img: 'game.svg ',
+          img: 'game.svg',
           title: 'سرگرمی و فراغت',
           parent: 'root',
           key: ' entertainment',
@@ -877,7 +877,7 @@ export default {
         // // // // // // //  اجتماعی
 
         {
-          img: 'public.svg ',
+          img: 'public.svg',
           title: 'اجتماعی',
           parent: 'root',
           key: ' social-services',
@@ -901,7 +901,7 @@ export default {
         { title: 'اشیا', parent: 'missing', key: 'lost-objects' },
         // // // // // /تجهیزات و صنعتی
         {
-          img: 'industrial.svg ',
+          img: 'industrial.svg',
           title: 'تجهیزات و صنعتی',
           parent: 'root',
           key: 'tools-materials-equipment ',
@@ -957,7 +957,7 @@ export default {
         // // // / استخدام
 
         {
-          img: 'employ.svg ',
+          img: 'employ.svg',
           title: 'استخدام و کاریابی',
           parent: 'root',
           key: 'jobs ',
