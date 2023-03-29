@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="tw-py-4 border-bottem">
+    <div class="">
       <div class="tw-max-w-[135px] tw-max-h-14 tw-w-full tw-h-full">
-        <div class="tw-flex tw-flex-col tw-items-center">
+        <div class="tw-flex tw-flex-col tw-items-center tw-px-12">
           <div class="base-text-xs tw-mb-1">{{ title }}</div>
           <div class="support-text-xl">{{ explanation }}</div>
         </div>

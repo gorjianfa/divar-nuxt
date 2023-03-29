@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="tw-w-full tw-max-w-[250px] tw-h-auto tw-px-4">
+    <div class="tw-w-full tw-max-w-[250px] tw-h-auto tw-pl-4">
       <div class="tw-flex tw-gap-2">
         <div class="tw-font-normal tw-text-xs tw-text-gray-400 tw-mt-1.5">
           {{ amountOf }}

@@ -4,7 +4,7 @@
       <div class="tw-my-4">
         <div class="tw-flex tw-items-center tw-justify-between">
           <div class="tw-flex tw-items-center tw-gap-2 tw-w-full">
-            <div class="tw-w-full tw-max-w-[126px]">
+            <div class=" ">
               <AppButton
                 href="https://www.cyvision.com"
                 class="tw-w-full"
@@ -13,7 +13,7 @@
                 textSize="baseWhite"
               />
             </div>
-            <div class="tw-w-full tw-max-w-[126px]">
+            <div >
               <AppButton
                 href="https://www.cyvision.com"
                 title="چت"

@@ -30,7 +30,7 @@
         
       </div>
     </div>
-    <div class="tw-px-4" v-if="fluctuation">
+    <div class="tw-py-4 tw-pl-4" v-if="fluctuation">
           <FormPriceFluctuation amountOf="حداقل" class="" />
           <div class="tw-mr-6">
             <svg

@@ -3,7 +3,7 @@
     <div class="tw-w-full tw-max-w-[404px] tw-h-auto">
       <div class="border-bottem">
         <div class="tw-py-3 tw-flex tw-justify-between tw-items-center">
-          <div class="text-information-list tw-text-gray-600">
+          <div class="text-information-list tw-text-gray-400">
             {{ rightTitle }}
           </div>
           <div class="text-information-list tw-text-gray-700">

@@ -12,7 +12,7 @@
   @apply tw-text-sm tw-font-normal tw-text-gray-400 hover:tw-text-gray-600;
 }
 .support-text-xl {
-  @apply tw-font-medium tw-text-xl tw-text-gray-800;
+  @apply tw-font-medium tw-text-lg tw-text-gray-800;
 }
 
 .base-text-sm-hover {
@@ -36,13 +36,19 @@
 .text-information-list {
   @apply tw-text-base tw-font-normal;
 }
-.border-top{
-@apply tw-border-t tw-border-solid tw-border-0 tw-border-t-gray-300
+.border-top {
+  @apply tw-border-t tw-border-solid tw-border-0 tw-border-t-gray-300;
 }
-.border-bottem{
-@apply tw-border-b tw-border-solid tw-border-b-gray-300 tw-border-0 
+.border-bottem {
+  @apply tw-border-b tw-border-solid tw-border-b-gray-300 tw-border-0;
 }
 
-.border-bottem-red{
-@apply tw-border-b tw-border-solid tw-border-b-red-700 tw-border-0 
+.border-bottem-red {
+  @apply tw-border-b tw-border-solid tw-border-b-red-700 tw-border-0;
+}
+.text-attrebutes {
+  @apply tw-text-xl tw-font-normal tw-text-gray-700;
+}
+.border-right {
+  @apply tw-border-solid tw-border-r tw-border-r-gray-300 tw-border-0;
 }

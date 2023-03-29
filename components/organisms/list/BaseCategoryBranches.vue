@@ -5,9 +5,9 @@
     </div>
 
     <div
-      class="tw-w-full tw-h-full tw-max-w-[248px] tw-max-h-10 tw-flex tw-bg-emerald-400 strec"
+      class="tw-w-full tw-h-full tw-max-w-[248px] tw-max-h-10 tw-flex tw-bg-white"
     >
-      <div class="tw-flex tw-flex-col tw-gap-3 tw-w-full">
+      <div class="tw-flex tw-flex-col tw-gap-3 tw-w-full tw-h-40">
         <div
           class="tw-py-2 tw-font-normal tw-text-xs tw-text-black tw-whitespace-nowrap"
         >
@@ -30,10 +30,14 @@
               />
             </svg>
           </div>
-          <div class="base-text-sm-hover tw-whitespace-nowrap">همه اگهی ها</div>
+          <nuxt-link
+            to="/"
+            class="base-text-sm-hover tw-whitespace-nowrap tw-no-underline"
+            >همه اگهی ها</nuxt-link
+          >
         </div>
 
-        <div class="">
+        <div class="kt-textarea__field tw-overflow-y-scroll">
           <ListBaseCategory
             v-for="(item, i) in resultQuery"
             :key="i"
@@ -46,11 +50,15 @@
             <div class=""><SimpleSelect value="قیمت" /></div>
           </div>
           <div class="border-bottem">
-            <div class=""><SimpleSelect value="وضعیت آگهی" /></div>
+            <div class=""><StatuseItem /></div>
           </div>
           <!--footer-->
           <div class="">
-            <CardShrinkFooter v-for="(item, i) in items" :key="i" v-bind="item" />
+            <CardShrinkFooter
+              v-for="(item, i) in items"
+              :key="i"
+              v-bind="item"
+            />
           </div>
         </div>
       </div>
@@ -72,11 +80,11 @@ export default {
             { access: 'پشتیبانی و قوانین' },
           ],
           svg: [
-            { img: 'twitter.svg' },
-            { img: 'linkedin.svg' },
-            { img: 'instagram.svg' },
+            { icon: 'twitter' },
+            { icon: 'linkedin' },
+            { icon: 'instagram' },
 
-            { img: 'film.svg' },
+            { icon: 'film' },
           ],
           consent: [
             { picture: 'mojavez.png' },

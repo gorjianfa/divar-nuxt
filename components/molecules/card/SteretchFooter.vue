@@ -1,7 +1,7 @@
 <template>
-  <div class="">
-    <div class="tw-container tw-bg-white">
-      <div class="tw-flex tw-items-center tw-justify-between tw-py-4">
+  <div class="tw-w-full  tw-bg-white">
+    <div class="tw-container tw-mx-auto">
+      <div class="tw-flex tw-items-center tw-justify-between tw-w-full tw-py-4">
         <div class="tw-flex tw-items-center tw-gap-2">
           <div class="">
             <img
@@ -15,7 +15,7 @@
             <div
               v-for="(item, i) in features"
               :key="i"
-              class="tw-border-r tw-border-0 tw-border-solid tw-border-r-gray-300"
+              class="border-right"
             >
               <a href="#" class="tw-no-underline tw-px-2 base-text-xs-hover">{{
                 item.access

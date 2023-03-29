@@ -25,7 +25,7 @@
             <div class="" v-if="branchList">
               <div class="tw-pr-4">
                 <div
-                  class="tw-border-r tw-border-solid tw-border-0 tw-border-t-gray-300"
+                  class="border-right"
                 >
                   <li
                     class="tw-list-none base-text-xs-hover tw-pr-[0.5px]"

@@ -19,7 +19,7 @@
                   title=" بابلسر"
                   variant="hover"
                   textSize="xSmall"
-                  class="tw-border-r tw-border-solid tw-border-0 tw-border-r-gray-300 tw-mr-2 tw-pr-2"
+                  class="border-right tw-mr-2 tw-pr-2"
                 />
               </div>
 
