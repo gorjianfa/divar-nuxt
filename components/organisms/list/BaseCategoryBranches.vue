@@ -37,8 +37,9 @@
           >
         </div>
 
-        <div class="kt-textarea__field tw-overflow-y-scroll">
+        <div class="">
           <ListBaseCategory
+          class="kt-textarea__field tw-overflow-y-scroll "
             v-for="(item, i) in resultQuery"
             :key="i"
             v-bind="item"

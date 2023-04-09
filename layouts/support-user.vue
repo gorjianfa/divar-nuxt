@@ -16,7 +16,7 @@
 
             <div class="tw-flex tw-items-center">
               <OnClickOutside @trigger="hideCard">
-                <div class="tw-flex tw-flex-col tw-relative">
+                <div class="tw-flex tw-flex-col ">
                   <AppButton
                     @click="OnClickOutside"
                     title="دیوارمن"
@@ -24,7 +24,7 @@
                     text-size="xSmall"
                     variant="hover"
                   />
-                  <div class="tw-absolute tw-top-16">
+                  <div class="tw-fixed">
                     <ListUserWebsite v-if="showList" />
                   </div></div
               ></OnClickOutside>

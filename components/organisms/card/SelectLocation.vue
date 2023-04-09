@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="tw-w-full tw-h-auto tw-max-w-[556px] tw-bg-white tw-rounded">
+    <div class="tw-w-full tw-h-auto tw-max-w-[556px] tw-shadow-2xl tw-rounded tw-z-30">
       <div class="">
         <div
           class="tw-w-full tw-max-w-[490px] tw-h-auto tw-pt-8 tw-px-8 tw-pb-4 border-bottem tw-bg-white"
@@ -20,7 +20,7 @@
             <!--choose a  city-->
             <div class="">
               <!--v-if="x"-->
-              <div class="">
+              <div class="tw-mb-4">
                 <span class="tw-font-normal tw-text-base tw-text-gray-500">
                   حداقل یک شهر را انتخاب کنید</span
                 >

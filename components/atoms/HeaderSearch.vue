@@ -55,6 +55,27 @@
         </div>
       </div>
     </div>
+
+    <!--card the most searched-->
+
+    <div
+      class="tw-w-full tw-max-w-[480px] tw-h-auto tw-rounded tw-fixed tw-shadow tw-bg-gray-50    "
+      v-if="inputText"
+    >
+      <div class="tw-flex tw-flex-col tw-pb-6 tw-px-6">
+        <p class="base-text-sm">بیشترین جستجوهای دیوار</p>
+        <div class="tw-grid tw-grid-cols-4  tw-mt-5  tw-gap-4">
+          <div class="" v-for="item in list" :key="item">
+            <a
+              :href="href"
+              class="  base-text-xs tw-whitespace-nowrap tw-p-2 tw-no-underline tw-rounded-3xl tw-border-solid tw-border tw-border-gray-300"
+            >
+              {{ item.title }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -65,6 +86,38 @@ export default {
       inputText: '',
       placeholder: ' جستجوی در همه آگهی ها',
       isFocused: false,
+      list: [
+        {
+          title: 'خودرو سواری ',
+        },
+        {
+          title: 'فروش اپارتمان',
+        },
+        {
+          title: 'اجاره اپارتمان',
+        },
+        {
+          title: 'موبایل',
+        },
+        {
+          title: 'صندلی و نیمکت',
+        },
+        {
+          title: 'خدمات',
+        },
+        {
+          title: 'استخدام',
+        },
+        {
+          title: 'وسایل شخصی',
+        },
+        {
+          title: 'حیوانات',
+        },
+        {
+          title: 'تلویزیون',
+        },
+      ],
     }
   },
 

@@ -52,3 +52,6 @@
 .border-right {
   @apply tw-border-solid tw-border-r tw-border-r-gray-300 tw-border-0;
 }
+.border-left {
+  @apply tw-border-solid tw-border-l tw-border-l-gray-300 tw-border-0;
+}

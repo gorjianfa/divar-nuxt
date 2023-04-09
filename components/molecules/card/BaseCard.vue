@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div class="tw-p-2 tw-w-full 
-     tw-max-w-[335px] tw-h-auto">
+    <div class="tw-p-2 tw-w-full tw-max-w-[335px] tw-h-[167px]">
       <a href="#" class="tw-no-underline">
         <article
           class="tw-mb-4 tw-p-4 tw-flex tw-cursor-pointer tw-rounded-md tw-border-[1px] tw-border-solid tw-border-gray-200 tw-bg-white"
@@ -10,10 +9,9 @@
             class="tw-flex tw-flex-col tw-w-full tw-h-full tw-max-w-[141.66px] tw-max-h-[136px]"
           >
             <div class="tw-mb-4 tw-max-w-[141px] tw-w-full tw-truncate">
-              <span
-                class="tw-font-medium tw-text-base tw-text-black  "
-                >{{ title }}</span
-              >
+              <span class="tw-font-medium tw-text-base tw-text-black">{{
+                title
+              }}</span>
             </div>
             <div class="">
               <span class="base-text-sm tw-pl-5"> {{ amountOfuse }}</span>
@@ -30,7 +28,7 @@
           <div class="tw-flex tw-flex-col tw-justify-end">
             <div class="tw-flex tw-w-full">
               <svg
-                class=" tw-flex tw-w-[20px] tw-h-5 tw-stroke-gray-500"
+                class="tw-flex tw-w-[20px] tw-h-5 tw-stroke-gray-500"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -48,9 +46,9 @@
 
           <div class="tw-flex tw-w-full">
             <img
-              :src="require('@/assets/img/main/' + img )"
+              :src="require('@/assets/img/main/' + img)"
               alt=""
-              class="tw-flex tw-w-full tw-h-full tw-max-w-[136px] tw-max-h-[140px] tw-rounded-md tw-mr-1"
+              class="tw-flex tw-w-full tw-h-full tw-max-w-[136px] tw-max-h-[116px] tw-rounded-md tw-mr-1"
             />
           </div>
         </article>

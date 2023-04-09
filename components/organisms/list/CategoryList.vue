@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="tw-py-10">
+    <div class="tw-py-1">
       <div class="tw-w-full tw-h-full tw-max-w-[160px]">
         <div class="tw-flex tw-flex-col tw-gap-2.5">
           <div

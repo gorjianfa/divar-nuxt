@@ -13,14 +13,20 @@
                     class="tw-w-[48px] tw-h-[48px] tw-flex tw-pl-2"
                   />
                 </div>
+                <OnClickOutside @trigger="hideCard">
+                  <AppButton
+                    @click="OnClickOutside"
+                    prependIcon="location"
+                    title=" بابلسر"
+                    variant="hover"
+                    textSize="xSmall"
+                    class="border-right tw-mr-2 tw-pr-2"
+                  />
 
-                <AppButton
-                  prependIcon="location"
-                  title=" بابلسر"
-                  variant="hover"
-                  textSize="xSmall"
-                  class="border-right tw-mr-2 tw-pr-2"
-                />
+                  <div class="tw-fixed tw-top-0 tw-right-80" v-if="showList">
+                    <CardSelectLocation />
+                  </div>
+                </OnClickOutside>
               </div>
 
               <div class=""><TopHeaderButtons class="" /></div>
@@ -35,7 +41,25 @@
 </template>
 
 <script>
-export default {}
+import { OnClickOutside } from '@vueuse/components'
+
+export default {
+  data() {
+    return {
+      showList: false,
+    }
+  },
+  components: { OnClickOutside },
+
+  methods: {
+    OnClickOutside() {
+      this.showList = !this.showList
+    },
+    hideCard() {
+      this.showList = null
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>

@@ -106,7 +106,7 @@ export default defineComponent({
           'tw-border-hidden tw-bg-red-800  group-hover:tw-bg-opacity-90 tw-mr-2',
         fill: 'tw-border-hidden   tw-bg-red-800  group-hover:tw-bg-opacity-90',
         hover: 'tw-border-hidden tw-bg-white group-hover:tw-bg-gray-100 ',
-        secondHover:'tw-bg-gray-100 group-hover:tw-bg-gray-200 tw-border-hidden',
+        secondHover:'tw-bg-gray-200 group-hover:tw-bg-gray-300 tw-border-hidden',
         outline:
           'tw-w-full tw-px-12 tw-border tw-border-gray-300 tw-border-solid tw-bg-white group-hover:tw-bg-gray-100 ',
       }[props.variant]
